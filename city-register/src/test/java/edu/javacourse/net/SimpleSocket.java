@@ -14,7 +14,7 @@ public class SimpleSocket {
         InputStream inputStream = socket.getInputStream();
         OutputStream outputStream = socket.getOutputStream();
 
-        String command = "Get /sitemap.xml HTTP/1.1\r\nHost:java-course.ru\r\n\r\n";
+        String command = "GET /sitemap.xml HTTP/1.1\r\nHost:java-course.ru\r\n\r\n";
         outputStream.write(command.getBytes());
         outputStream.flush();
 

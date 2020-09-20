@@ -6,6 +6,16 @@
 </head>
 <body>
 <h3>Hello World!!!!</h3>
-<a href="checkPerson">Chek person</a>
+<form action="checkPerson" method="get">
+    <label>Surname: </label><input type="text" name="surname"/><br>
+    <label>Given name: </label><input type="text" name="givenname"/><br>
+    <label>Patronymic: </label><input type="text" name="patronymic"/><br>
+    <label>Date of Birth: </label><input type="text" name="dateOfBirth"/><br>
+    <label>Street code: </label><input type="text" name="streetCode"/><br>
+    <label>Building: </label><input type="text" name="building"/><br>
+    <label>Extension: </label><input type="text" name="extension"/><br>
+    <label>Apartment: </label><input type="text" name="apartment"/><br>
+    <input type="submit" value="Check">
+</form>
 </body>
 </html>

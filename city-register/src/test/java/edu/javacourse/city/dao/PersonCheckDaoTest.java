@@ -25,6 +25,7 @@ public class PersonCheckDaoTest {
         request.setApartment("121");
 
         PersonCheckDao checkDao = new PersonCheckDao();
+        checkDao.setConnectionBuilder(new DirectConnectionBuilder());
         PersonResponse response = checkDao.checkPerson(request);
         Assert.assertTrue(response.isRegistered());
         Assert.assertFalse(response.isTemporal());
@@ -42,6 +43,7 @@ public class PersonCheckDaoTest {
         request.setApartment("4");
 
         PersonCheckDao checkDao = new PersonCheckDao();
+        checkDao.setConnectionBuilder(new DirectConnectionBuilder());
         PersonResponse response = checkDao.checkPerson(request);
         Assert.assertTrue(response.isRegistered());
         Assert.assertFalse(response.isTemporal());
